@@ -36,7 +36,7 @@ REMOTE + TECH + SERVICE + FUN
 Visit http://blog.remotty.com/."
     end
 
-    bot.head(/ (help|도움말)/) do
+    bot.hear(/ (help|도움말)/) do
       "한기님 봇 도움말
 ================
 한기님 (핑|ping)
