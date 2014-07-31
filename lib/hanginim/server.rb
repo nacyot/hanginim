@@ -36,6 +36,18 @@ REMOTE + TECH + SERVICE + FUN
 Visit http://blog.remotty.com/."
     end
 
+    bot.head(/ (help|도움말)/) do
+      "한기님 봇 도움말
+================
+한기님 (핑|ping)
+한기님 profile
+한기님 (리모티|remotty)
+한기님 어록
+한기님 한기님
+한기님 (help|도움말)
+"
+    end
+    
     bot.hear(/ 어록$/)do
       File.open("./data/sentences.txt", "r").readlines("\n---\n").sort_by{rand}[0][0..-6oe]
     end
