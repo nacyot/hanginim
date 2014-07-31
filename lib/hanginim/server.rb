@@ -44,12 +44,11 @@ Visit http://blog.remotty.com/."
 한기님 (리모티|remotty)
 한기님 어록
 한기님 한기님
-한기님 (help|도움말)
 "
     end
     
     bot.hear(/ 어록$/)do
-      File.open("./data/sentences.txt", "r").readlines("\n---\n").sort_by{rand}[0][0..-6oe]
+      File.open("./data/sentences.txt", "r").readlines("\n---\n").sort_by{rand}[0][0..-6]
     end
     
     bot.hear /(한기님.*)/ do |mdata|
